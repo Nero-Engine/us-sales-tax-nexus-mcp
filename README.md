@@ -1,5 +1,7 @@
 # US Sales Tax Economic Nexus Check
 
+[![US Sales Tax Economic Nexus Check MCP connector](https://glama.ai/mcp/connectors/io.github.Nero-Engine/us-sales-tax-nexus/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.Nero-Engine/us-sales-tax-nexus)
+
 Which US states must a remote seller register in for sales tax? Every state's nexus rule. Sourced.
 
 **Endpoint:** `https://us-sales-tax-nexus.nerolabs.workers.dev/mcp` (MCP, Streamable HTTP)
@@ -22,6 +24,7 @@ Which US states must a remote seller register in for sales tax? Every state's ne
 - **Claude (web or desktop):** Settings, Connectors, Add custom connector, paste the endpoint.
 - **ChatGPT:** Settings, Apps and connectors, Advanced settings, switch on Developer mode, then Create, paste the endpoint, No authentication.
 - **Claude Code:** `claude mcp add --transport http us-sales-tax-nexus https://us-sales-tax-nexus.nerolabs.workers.dev/mcp`
+- **Cline:** add `"us-sales-tax-nexus": { "type": "streamableHttp", "url": "https://us-sales-tax-nexus.nerolabs.workers.dev/mcp" }` under `mcpServers` in cline_mcp_settings.json (see llms-install.md).
 - **Gemini CLI:** `gemini extensions install https://github.com/Nero-Engine/us-sales-tax-nexus-mcp`
 - **Cursor, VS Code, Windsurf and others:**
 
