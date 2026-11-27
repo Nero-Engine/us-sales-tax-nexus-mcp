@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Nero-Engine/us-sales-tax-nexus",
+  "title": "US Sales Tax Economic Nexus Check",
+  "description": "Which US states must a remote seller register in for sales tax? Every state's nexus rule. Sourced.",
+  "version": "1.1.0",
+  "repository": {
+    "url": "https://github.com/Nero-Engine/us-sales-tax-nexus-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://us-sales-tax-nexus.nerolabs.workers.dev/docs",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://us-sales-tax-nexus.nerolabs.workers.dev/mcp"
+    }
+  ]
+}
